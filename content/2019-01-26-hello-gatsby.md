@@ -1,13 +1,13 @@
 ---
 title: "Hello Gatsby"
-cover: "2019-01-26-hello-gatsby.png"
+cover: "2019-01-26/hello-gatsby.png"
 category: "development"
-date: "2019-26-01"
+date: "2019-01-26"
 tags:
-    - gatsby
-    - blog
-    - setup
-    - howto
+  - gatsby
+  - blog
+  - setup
+  - howto
 ---
 
 # Hello Gatsby
@@ -34,6 +34,8 @@ yarn run build:gh
 
 However, I was rudely greeted with the following graphQL field error:
 
-![graphql error](2019-26-01/deploy-error.png)
+![graphql error](2019-01-26/deploy-error.png)
 
 This suggests that something is wrong with my `date` field... hmmm, what could it be?
+
+As it turns out, there must be at least 1 markdown file directly in the `contents/*` directory; if there isn't one or, as was in my case, everything was under `content/posts/*` so things didn't work
