@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Teach Myself]]></title><description><![CDATA[Thomas Chen's blog on machine learning, programming, physics, engineering, and other things built on GatsbyJS stater with Material design in mind.]]></description><link>https://foxnewsnetwork.github.io/teach-myself</link><image><url>https://foxnewsnetwork.github.io/teach-myself/logos/logo-512.png</url><title>Teach Myself</title><link>https://foxnewsnetwork.github.io/teach-myself</link></image><generator>GatsbyJS Material Starter</generator><lastBuildDate>Sun, 27 Jan 2019 01:05:44 GMT</lastBuildDate><atom:link href="https://foxnewsnetwork.github.io/teach-myself/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019. Thomas CHen]]></copyright><item><title><![CDATA[Hello Gatsby]]></title><description><![CDATA[Hello Gatsby I've finally decided to maintain an actual presentable blog instead of just using markdown files, gists, etc., to capture…]]></description><link>https://foxnewsnetwork.github.io/teach-myself/hello-gatsby</link><guid isPermaLink="false">https://foxnewsnetwork.github.io/teach-myself/hello-gatsby</guid><category><![CDATA[gatsby]]></category><category><![CDATA[blog]]></category><category><![CDATA[setup]]></category><category><![CDATA[howto]]></category><pubDate>Sat, 26 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;hello-gatsby&quot;&gt;&lt;a href=&quot;#hello-gatsby&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hello Gatsby&lt;/h1&gt;
+&lt;p&gt;I&apos;ve finally decided to maintain an actual presentable blog instead of just using markdown files, gists, etc., to capture documentation.&lt;/p&gt;
+&lt;p&gt;This is simply the &quot;hello world&quot; post so don&apos;t expect much content here.&lt;/p&gt;
+&lt;p&gt;Next time (as in this weekend), I plan to discuss the following two topics&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;What is the quantum eraser effect?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;What does it have to do with time travel?&lt;/li&gt;
+&lt;li&gt;Does &lt;em&gt;any&lt;/em&gt; information travel backward in time?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Explorations in to the slack API&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How to setup a slack bot project&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;deployment&quot;&gt;&lt;a href=&quot;#deployment&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Deployment&lt;/h2&gt;
+&lt;p&gt;After clearing out &lt;code class=&quot;language-text&quot;&gt;contents/*.md&lt;/code&gt; and other such unused things, I attempted to build and deploy with:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;yarn run build:gh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;However, I was rudely greeted with the following graphQL field error:&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/teach-myself/static/4217dbf781effbf3faa60c202308234f/f4296/deploy-error.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 672px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 54.41176470588235%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsSAAALEgHS3X78AAABNElEQVQoz41S2Y6CQBCE4ZL7FFxCRARjYuKT//9ttV296u6DujxUqrtmKKo7Yw1FhkNV4NyU6LME52XGPM84HEaM44hlWXA6nTDu96pP04TjcZLzg57vRSf3fa+aVTUNyrpBte2Et2i7L2RZAeN4cF1f2RhXag+O1LbU7J37OXVjHHgeexdWFIVIkgyWFQjiP0gF0Z0TWLawLWyIQiC9yUXjXUdg/cD3fXXfbDYIw1A5SRKkaar9A8aY348+IYoiNdztdrher7jdbrhcLiiKQo1pxju2ba8zjONY9uFogq7rFHVdI89z2WWmxqzJ1DnRR0OOyGUyZVmWOnJVVWrMdG3bPtOSqbN+a8xd0SwIgueoq0Z7h0cqNsMwaILV+3oF7ofp2NCID/XfPa1NSGP+YPUTeYFvfRLwgiPtogkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;graphql error&quot;
+        title=&quot;&quot;
+        src=&quot;/teach-myself/static/4217dbf781effbf3faa60c202308234f/e372f/deploy-error.png&quot;
+        srcset=&quot;/teach-myself/static/4217dbf781effbf3faa60c202308234f/26d00/deploy-error.png 168w,
+/teach-myself/static/4217dbf781effbf3faa60c202308234f/6bdce/deploy-error.png 336w,
+/teach-myself/static/4217dbf781effbf3faa60c202308234f/e372f/deploy-error.png 672w,
+/teach-myself/static/4217dbf781effbf3faa60c202308234f/f4296/deploy-error.png 680w&quot;
+        sizes=&quot;(max-width: 672px) 100vw, 672px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This suggests that something is wrong with my &lt;code class=&quot;language-text&quot;&gt;date&lt;/code&gt; field... hmmm, what could it be?&lt;/p&gt;
+&lt;p&gt;As it turns out, there must be at least 1 markdown file directly in the &lt;code class=&quot;language-text&quot;&gt;contents/*&lt;/code&gt; directory; if there isn&apos;t one or, as was in my case, everything was under &lt;code class=&quot;language-text&quot;&gt;content/posts/*&lt;/code&gt; so things didn&apos;t work&lt;/p&gt;</content:encoded><author>foxnewsnetworkr@example.com</author></item></channel></rss>
