@@ -1,4 +1,283 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Teach Myself]]></title><description><![CDATA[Thomas Chen's blog on machine learning, programming, physics, engineering, and other things built on GatsbyJS stater with Material design in mind.]]></description><link>https://foxnewsnetwork.github.io/teach-myself</link><image><url>https://foxnewsnetwork.github.io/teach-myself/logos/logo-512.png</url><title>Teach Myself</title><link>https://foxnewsnetwork.github.io/teach-myself</link></image><generator>GatsbyJS Material Starter</generator><lastBuildDate>Sun, 27 Jan 2019 01:05:44 GMT</lastBuildDate><atom:link href="https://foxnewsnetwork.github.io/teach-myself/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019. Thomas CHen]]></copyright><item><title><![CDATA[Hello Gatsby]]></title><description><![CDATA[Hello Gatsby I've finally decided to maintain an actual presentable blog instead of just using markdown files, gists, etc., to capture…]]></description><link>https://foxnewsnetwork.github.io/teach-myself/hello-gatsby</link><guid isPermaLink="false">https://foxnewsnetwork.github.io/teach-myself/hello-gatsby</guid><category><![CDATA[gatsby]]></category><category><![CDATA[blog]]></category><category><![CDATA[setup]]></category><category><![CDATA[howto]]></category><pubDate>Sat, 26 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;hello-gatsby&quot;&gt;&lt;a href=&quot;#hello-gatsby&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hello Gatsby&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Teach Myself]]></title><description><![CDATA[Thomas Chen's blog on machine learning, programming, physics, engineering, and other things built on GatsbyJS stater with Material design in mind.]]></description><link>https://foxnewsnetwork.github.io/teach-myself</link><image><url>https://foxnewsnetwork.github.io/teach-myself/logos/logo-512.png</url><title>Teach Myself</title><link>https://foxnewsnetwork.github.io/teach-myself</link></image><generator>GatsbyJS Material Starter</generator><lastBuildDate>Sat, 02 Feb 2019 22:57:36 GMT</lastBuildDate><atom:link href="https://foxnewsnetwork.github.io/teach-myself/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019. Thomas CHen]]></copyright><item><title><![CDATA[My First Slack Bot]]></title><description><![CDATA[Putting Together a Slack Bot Here, I document and go over the steps it took me to setup a slack bot. The ultimate vision is eventually get…]]></description><link>https://foxnewsnetwork.github.io/teach-myself/my-first-slack-bot</link><guid isPermaLink="false">https://foxnewsnetwork.github.io/teach-myself/my-first-slack-bot</guid><category><![CDATA[slack]]></category><category><![CDATA[bot]]></category><category><![CDATA[setup]]></category><category><![CDATA[howto]]></category><pubDate>Sat, 02 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;putting-together-a-slack-bot&quot;&gt;&lt;a href=&quot;#putting-together-a-slack-bot&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Putting Together a Slack Bot&lt;/h1&gt;
+&lt;p&gt;Here, I document and go over the steps it took me to setup a slack bot.&lt;/p&gt;
+&lt;p&gt;The ultimate vision is eventually get this slack bot to process UML and drawing languages and return diagrams directly into slack, then charge companies some amount of money for this service.&lt;/p&gt;
+&lt;h2 id=&quot;going-through-documentation&quot;&gt;&lt;a href=&quot;#going-through-documentation&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Going through documentation&lt;/h2&gt;
+&lt;p&gt;I start out by read through &lt;a href=&quot;https://api.slack.com/bot-users#getting-started&quot;&gt;slack bot docs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I click the Create App button and name my bot - in this case &quot;diagram&quot;&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/teach-myself/static/87c9094b04b71017f5c854244ca7a40d/74ad1/create-app.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 672px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 70.24704618689582%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAABkUlEQVQ4y5WT2W6DMBBF+f8vy0OkvOS5VMoKFAI2NmbLdO60YzlR2qqWrjDGPr6zkJVlQcXlTOVHTRWrM5b8EMj54VHDz/KiIMqmwdHsjbyM40ghBPrvuN/vtK6rKDPW6nLc0LYtnU4nul6vdD6z+7Kkrute6na70TRNEZyBuizLg/I8p+12S7vdjjabDe33+whPdblc6HA4iAFwpnnmkJmOMAHCDXgaY6iqKpmnYT0LEDyRqmEaKW/KL+DAScWiugWwrusYFi7EPuyZ2cWznOM6LDOFiR0CgM2pw77vIwzhQDikl6YuMeSbXMpA3KA3KxAA5KcoChHyhSgwUiDmOIdvuiZADSl1CGjTNBI+5nBruSNEvNbz03tHgWHW9sKAsQjUwigQB9P2AFiF5m+t46bmFLAJ773AYCpWWUNeGVi3hoq6jWBAkCe8O8cKI/XjQm5apXsB03xmWinNDebop9+GtQjZ0Hv+RsfjUXKo51+2jYT7Xd1XQm7RVigWGh4ha5GkbeBK86cu/xL26v+bttEnwj4/3KQYeXIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;create app screenshot&quot;
+        title=&quot;&quot;
+        src=&quot;/teach-myself/static/87c9094b04b71017f5c854244ca7a40d/e372f/create-app.png&quot;
+        srcset=&quot;/teach-myself/static/87c9094b04b71017f5c854244ca7a40d/26d00/create-app.png 168w,
+/teach-myself/static/87c9094b04b71017f5c854244ca7a40d/6bdce/create-app.png 336w,
+/teach-myself/static/87c9094b04b71017f5c854244ca7a40d/e372f/create-app.png 672w,
+/teach-myself/static/87c9094b04b71017f5c854244ca7a40d/74ad1/create-app.png 931w&quot;
+        sizes=&quot;(max-width: 672px) 100vw, 672px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;app-design&quot;&gt;&lt;a href=&quot;#app-design&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;App Design&lt;/h2&gt;
+&lt;p&gt;Here&apos;s what I want this app to do:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When given a command like the following:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;\diagram flow 
+
+st=&amp;gt;start: Start:&amp;gt;http://www.google.com[blank]
+e=&amp;gt;end:&amp;gt;http://www.google.com
+op1=&amp;gt;operation: My Operation
+sub1=&amp;gt;subroutine: My Subroutine
+cond=&amp;gt;condition: Yes
+or No?:&amp;gt;http://www.google.com
+io=&amp;gt;inputoutput: catch something...
+para=&amp;gt;parallel: parallel tasks
+
+st-&amp;gt;op1-&amp;gt;cond
+cond(yes)-&amp;gt;io-&amp;gt;e
+cond(no)-&amp;gt;para
+para(path1, bottom)-&amp;gt;sub1(right)-&amp;gt;op1
+para(path2, top)-&amp;gt;op1&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;I would like this to lead to an image like they have on &lt;a href=&quot;http://flowchart.js.org/&quot;&gt;flowchart.js&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;https://some-cdn-host.com/hash-val.png&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/teach-myself/static/7d92fc45527d1d37acf4c2a125b28a8a/6b6f9/flow-chart.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 447px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 122.14765100671141%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAAsSAAALEgHS3X78AAACQklEQVQ4y52V14oCUQyG5/3fxnsvRBR7770rimDvJcsXiDs6CrseCHPmnMyf5E8Z53w+y+l0kvv9Lo1GQ9LptMTjcZlOp3K73fQOnb+KY5vL5SLH41FisZjU63UxQ38VDyBgeNnr9VSBxfs7eXfnAbxer6pYqVQklUpJs9mUarUq5XJZz3jannuigCKetVpNHSJKB2/gajgcSrvdlmAwqDzy4Wg0kv1+L+v1Wjabjcp2u5VsNvvY73Y7BVytVuqUY+FlMhlJJBJqFTBAMcDCMsoIxvHKzgi32+0+A6LU7/cVLJlMKiAfzWYzT6YBggo7AwTDD8BXDrFGmCzO3GDs3YDIR0ALnVDhk/UKZiHCGcB4j3z0sNVqqXUyPJlMPECcQQ2FzxM5HA5eDlnFYlF5G4/HWgLwGAgEHueUjN/v13MEvikfjAwGA1kul78e4j4WUMQ7pNPpKJcYxAv0uC+VShKJRDRsjPEdzfAEaCEjlA8fWVmYQTeX3Juxj0mx1oNHksK7u08h3xYRuN89gEY6i1ABs3618lksFsoVUygcDivXGKZWScojZCzRWlzO53PNIISjaISz4I0kUQXQAp+hUEh8Pp8mjDbUXraMIoVCQZ+5XE73kI0BFpmmNbnP5/MKwh3yNL5wlWLGKzKHAtnDEwRuiMKS9trX0OJOmmMVz4sRDogpmvJr17gH8NuJbUMCghlNbqtf/QKsYwiZRLin8L8B7SfFQOWfEo1GtXC/8fKpU0gQGaQTbFR9DWig7zL3H/kBI2whBiVjjOcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;rendered output&quot;
+        title=&quot;&quot;
+        src=&quot;/teach-myself/static/7d92fc45527d1d37acf4c2a125b28a8a/6b6f9/flow-chart.png&quot;
+        srcset=&quot;/teach-myself/static/7d92fc45527d1d37acf4c2a125b28a8a/0d5c6/flow-chart.png 168w,
+/teach-myself/static/7d92fc45527d1d37acf4c2a125b28a8a/4046a/flow-chart.png 336w,
+/teach-myself/static/7d92fc45527d1d37acf4c2a125b28a8a/6b6f9/flow-chart.png 447w&quot;
+        sizes=&quot;(max-width: 447px) 100vw, 447px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;creating-new-commands&quot;&gt;&lt;a href=&quot;#creating-new-commands&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Creating New Commands&lt;/h2&gt;
+&lt;p&gt;Under the &lt;a href=&quot;https://api.slack.com/apps/AFVRCMG72/slash-commands?&quot;&gt;MyApps page&lt;/a&gt; on slack, I go into &lt;code class=&quot;language-text&quot;&gt;Features &amp;gt; Slash Commands&lt;/code&gt; to create my desired command&lt;/p&gt;
+&lt;p&gt;The API presented here seems quite intuitive, and demands that I will need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;command&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;\diagram&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;request url&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I&apos;ll need to setup my lambda back-end here&lt;/li&gt;
+&lt;li&gt;Q: What actually does the request to my back-end look like?&lt;/li&gt;
+&lt;li&gt;Q: What will my response need to be?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;description&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Draws a graph!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;usage hints&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Show above hint&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/teach-myself/static/5738082c4ac9384ab122d91a17c063f1/2ae14/create-new-cmd.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 595px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 115.63025210084035%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAAAsSAAALEgHS3X78AAAB+klEQVQ4y42V2Y7CMAxF+/+fBg9M5x0EZSmUrUDZl4yORzdySxlNpFunaez4ekmT4Mbr9TJ5OBxCmqah2+2GXq8X0q80fKffNu90OmE0GtX2+5E8Ho/g8Xw+TR6PRzN8Op1CVVUmed/v9+F6vZox9nqglzRP0cem11rnHcX7/R6hdZCwebvdhsViETabTTQCLpeLeYdXzJuGeL/dbqEsS5sbZR4orddrU/QGoQZ1vjNvGgQYZI9YJYqFqAAZbCp+AodFgzwmk0kYDAah3++b+xp4tlqtLBSSHrDa7XYmOTR62DZ8EppoZlb7oockJBtlYTqdWo3JS2JDwgS8wiPRBMxJWPSQBwsoU2uqM4Y2C+fzuTXbKp1IWUFns6fsPZE3mktHspYUKA+Hw5DP8lpR4zEU8RpJpxAOPFX8VIs1ys1+9j1N3DCCUeLIHOOg3JZWCbWktPWkNvgsSn7KcM1gURRhNpsZxuOxhYA1sk4o5vO51eo8/5VQ9EOGI2VooAQ9aFGoUPGB11w3zacwJf728LTaFKTUFqY3ylAFWZbFVoRusSjCf0e8vnxhC3pXF/x1OfC91nrEhbiRDCUkz3OTeExyqL2/8NYp8kjloJhKtpWNv+beDC6XS8u02q/tlvFtqoyLcs0gp1My3DRQ/vRHY606VNYhakPgS+kH/RACWGjziqYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;creating new slack commands&quot;
+        title=&quot;&quot;
+        src=&quot;/teach-myself/static/5738082c4ac9384ab122d91a17c063f1/2ae14/create-new-cmd.png&quot;
+        srcset=&quot;/teach-myself/static/5738082c4ac9384ab122d91a17c063f1/fa436/create-new-cmd.png 168w,
+/teach-myself/static/5738082c4ac9384ab122d91a17c063f1/f2f14/create-new-cmd.png 336w,
+/teach-myself/static/5738082c4ac9384ab122d91a17c063f1/2ae14/create-new-cmd.png 595w&quot;
+        sizes=&quot;(max-width: 595px) 100vw, 595px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;But before I can proceed, I &lt;/p&gt;
+&lt;h2 id=&quot;the-internals-of-a-slack-command-request&quot;&gt;&lt;a href=&quot;#the-internals-of-a-slack-command-request&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Internals of a Slack Command Request&lt;/h2&gt;
+&lt;p&gt;According to the &lt;a href=&quot;https://api.slack.com/slash-commands#app_command_handling&quot;&gt;slack API docs&lt;/a&gt;, we have the following example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;/weather 94070&lt;/code&gt; leads to the following response&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;token=gIkuvaNzQIHg97ATvDxqgjtO
+&amp;amp;team_id=T0001
+&amp;amp;team_domain=example
+&amp;amp;enterprise_id=E0001
+&amp;amp;enterprise_name=Globular%20Construct%20Inc
+&amp;amp;channel_id=C2147483705
+&amp;amp;channel_name=test
+&amp;amp;user_id=U2147483697
+&amp;amp;user_name=Steve
+&amp;amp;command=/weather
+&amp;amp;text=94070
+&amp;amp;response_url=https://hooks.slack.com/commands/1234/5678
+&amp;amp;trigger_id=13345224609.738474920.8088930838d88f008e0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With header &lt;code class=&quot;language-text&quot;&gt;Content-Type: application/x-www-form-urlencoded&lt;/code&gt; &lt;/p&gt;
+&lt;p&gt;For us, the fields &lt;code class=&quot;language-text&quot;&gt;text&lt;/code&gt; will store the directives to draw our UML file, and possibly &lt;code class=&quot;language-text&quot;&gt;team_id&lt;/code&gt; / &lt;code class=&quot;language-text&quot;&gt;enterprise_id&lt;/code&gt; for when we decide to track usage and costs&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: if our response takes longer than 3s, we&apos;ll have to use the &lt;code class=&quot;language-text&quot;&gt;response_url&lt;/code&gt; field and send back &lt;code class=&quot;language-text&quot;&gt;200&lt;/code&gt; right away&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;a-slack-command-response&quot;&gt;&lt;a href=&quot;#a-slack-command-response&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A Slack Command Response&lt;/h2&gt;
+&lt;p&gt;In slack, we have 3000 ms (3 seconds) to make a resposne before we are considered timeout. In that time, we must respond with the following&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;status: 200&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;content-type: application/json&lt;/code&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&apos;s the type of expected response (see &lt;a href=&quot;https://api.slack.com/docs/messages#composing_messages&quot;&gt;composing messages docs&lt;/a&gt; for more details)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Protip: a lot of this requires experimentation on the &lt;a href=&quot;https://api.slack.com/docs/messages/builder?msg=%7B%22text%22%3A%22We%20should%20be%20concerned%20if%20the%20variable%20value%20for%20%60radioactive%60%20is%20%60true%60.%22%7D&quot;&gt;slack message builder&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;typescript&quot;&gt;&lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;type&lt;/span&gt; SlackResponse &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  response_type&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ephemeral&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;in_channel&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  text&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  attachments&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;Array&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Attachment&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;type&lt;/span&gt; Attachment &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  text&lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token builtin&quot;&gt;string&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sidenote: we could also send back plain text, but that&apos;s not applicable to us&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here&apos;s an example response (taken from the &lt;a href=&quot;https://api.slack.com/docs/message-attachments&quot;&gt;slack messages article&lt;/a&gt;)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;response_type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;in_channel&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;clc no&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;attachments&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;fallback&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Required plain-text summary of the attachment.&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;color&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;#2eb886&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;pretext&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Optional text that appears above the attachment block&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;author_name&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Bobby Tables&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;author_link&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;http://flickr.com/bobby/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;author_icon&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;http://flickr.com/icons/bobby.jpg&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Slack API Documentation&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;title_link&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://api.slack.com/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Optional text that appears within the attachment&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;fields&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token property&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Priority&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token property&quot;&gt;&quot;value&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;High&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token property&quot;&gt;&quot;short&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;image_url&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://avatars0.githubusercontent.com/u/9582?s=460&amp;amp;v=4&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;thumb_url&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://avatars3.githubusercontent.com/u/1481354?s=70&amp;amp;v=4&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;footer&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Slack API&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;footer_icon&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://avatars2.githubusercontent.com/u/6510388?s=70&amp;amp;v=4&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;ts&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;123456789&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: Slack messages appear to be tailor-made for sharing articles and links! So not everything is possible&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As it turns out, slack is smart enough to auto-process images:&lt;/p&gt;
+&lt;p&gt;So something as simple as:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;attachments&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;fallback&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Uh-oh&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;image_url&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://i.imgur.com/5yDgqz7.jpg&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token property&quot;&gt;&quot;actions&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;token property&quot;&gt;&quot;type&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;button&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token property&quot;&gt;&quot;text&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Edit&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token property&quot;&gt;&quot;url&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://flights.example.com/book/r123456&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;token property&quot;&gt;&quot;style&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;primary&quot;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Will generate the &lt;a href=&quot;https://api.slack.com/docs/messages/builder?msg=%7B%22attachments%22%3A%5B%7B%22fallback%22%3A%22Uh-oh%22%2C%22image_url%22%3A%22https%3A%2F%2Fi.imgur.com%2F5yDgqz7.jpg%22%2C%22actions%22%3A%5B%7B%22type%22%3A%22button%22%2C%22text%22%3A%22Edit%22%2C%22url%22%3A%22https%3A%2F%2Fflights.example.com%2Fbook%2Fr123456%22%2C%22style%22%3A%22primary%22%7D%5D%7D%5D%7D&quot;&gt;following&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/teach-myself/static/87c9094b04b71017f5c854244ca7a40d/74ad1/message.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 672px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 70.24704618689582%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAABkUlEQVQ4y5WT2W6DMBBF+f8vy0OkvOS5VMoKFAI2NmbLdO60YzlR2qqWrjDGPr6zkJVlQcXlTOVHTRWrM5b8EMj54VHDz/KiIMqmwdHsjbyM40ghBPrvuN/vtK6rKDPW6nLc0LYtnU4nul6vdD6z+7Kkrute6na70TRNEZyBuizLg/I8p+12S7vdjjabDe33+whPdblc6HA4iAFwpnnmkJmOMAHCDXgaY6iqKpmnYT0LEDyRqmEaKW/KL+DAScWiugWwrusYFi7EPuyZ2cWznOM6LDOFiR0CgM2pw77vIwzhQDikl6YuMeSbXMpA3KA3KxAA5KcoChHyhSgwUiDmOIdvuiZADSl1CGjTNBI+5nBruSNEvNbz03tHgWHW9sKAsQjUwigQB9P2AFiF5m+t46bmFLAJ773AYCpWWUNeGVi3hoq6jWBAkCe8O8cKI/XjQm5apXsB03xmWinNDebop9+GtQjZ0Hv+RsfjUXKo51+2jYT7Xd1XQm7RVigWGh4ha5GkbeBK86cu/xL26v+bttEnwj4/3KQYeXIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;generated message&quot;
+        title=&quot;&quot;
+        src=&quot;/teach-myself/static/87c9094b04b71017f5c854244ca7a40d/e372f/message.png&quot;
+        srcset=&quot;/teach-myself/static/87c9094b04b71017f5c854244ca7a40d/26d00/message.png 168w,
+/teach-myself/static/87c9094b04b71017f5c854244ca7a40d/6bdce/message.png 336w,
+/teach-myself/static/87c9094b04b71017f5c854244ca7a40d/e372f/message.png 672w,
+/teach-myself/static/87c9094b04b71017f5c854244ca7a40d/74ad1/message.png 931w&quot;
+        sizes=&quot;(max-width: 672px) 100vw, 672px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;next-time&quot;&gt;&lt;a href=&quot;#next-time&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Next time&lt;/h2&gt;
+&lt;p&gt;In part 2 of this blog, we will go over:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Setting up lambda&lt;/li&gt;
+&lt;li&gt;connecting with graphizo&lt;/li&gt;
+&lt;/ul&gt;</content:encoded><author>foxnewsnetworkr@example.com</author></item><item><title><![CDATA[Hello Gatsby]]></title><description><![CDATA[Hello Gatsby I've finally decided to maintain an actual presentable blog instead of just using markdown files, gists, etc., to capture…]]></description><link>https://foxnewsnetwork.github.io/teach-myself/hello-gatsby</link><guid isPermaLink="false">https://foxnewsnetwork.github.io/teach-myself/hello-gatsby</guid><category><![CDATA[gatsby]]></category><category><![CDATA[blog]]></category><category><![CDATA[setup]]></category><category><![CDATA[howto]]></category><pubDate>Sat, 26 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;hello-gatsby&quot;&gt;&lt;a href=&quot;#hello-gatsby&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hello Gatsby&lt;/h1&gt;
 &lt;p&gt;I&apos;ve finally decided to maintain an actual presentable blog instead of just using markdown files, gists, etc., to capture documentation.&lt;/p&gt;
 &lt;p&gt;This is simply the &quot;hello world&quot; post so don&apos;t expect much content here.&lt;/p&gt;
 &lt;p&gt;Next time (as in this weekend), I plan to discuss the following two topics&lt;/p&gt;
