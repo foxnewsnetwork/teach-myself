@@ -103,6 +103,14 @@ Since I expect this to be an SVG file, I can post this directly into the browser
 
 >Note: the `graphizo` thing label is unfortunate, so I'll probably have to generate my own images on lambda before I go live! @TODO for me
 
+## Stuff for the future
+
+- Figure out what to do with the `graphizo` stuff
+- Figure out how to handle caching data
+- Connect the slack bot to the zeit back-end
+- Learn about authentication with zeit co
+- Figure out a language to annotate images with graphs
+
 # Appendix
 
 ## A1 - TL;DR on Writing Tests, Not too many, and Mostly Integration
