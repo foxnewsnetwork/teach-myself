@@ -1,4 +1,247 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Teach Myself]]></title><description><![CDATA[Thomas Chen's blog on machine learning, programming, physics, engineering, and other things built on GatsbyJS stater with Material design in mind.]]></description><link>https://foxnewsnetwork.github.io/teach-myself</link><image><url>https://foxnewsnetwork.github.io/teach-myself/logos/logo-512.png</url><title>Teach Myself</title><link>https://foxnewsnetwork.github.io/teach-myself</link></image><generator>GatsbyJS Material Starter</generator><lastBuildDate>Sat, 02 Feb 2019 22:57:36 GMT</lastBuildDate><atom:link href="https://foxnewsnetwork.github.io/teach-myself/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019. Thomas CHen]]></copyright><item><title><![CDATA[My First Slack Bot]]></title><description><![CDATA[Putting Together a Slack Bot Here, I document and go over the steps it took me to setup a slack bot. The ultimate vision is eventually get…]]></description><link>https://foxnewsnetwork.github.io/teach-myself/my-first-slack-bot</link><guid isPermaLink="false">https://foxnewsnetwork.github.io/teach-myself/my-first-slack-bot</guid><category><![CDATA[slack]]></category><category><![CDATA[bot]]></category><category><![CDATA[setup]]></category><category><![CDATA[howto]]></category><pubDate>Sat, 02 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;putting-together-a-slack-bot&quot;&gt;&lt;a href=&quot;#putting-together-a-slack-bot&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Putting Together a Slack Bot&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Teach Myself]]></title><description><![CDATA[Thomas Chen's blog on machine learning, programming, physics, engineering, and other things built on GatsbyJS stater with Material design in mind.]]></description><link>https://foxnewsnetwork.github.io/teach-myself</link><image><url>https://foxnewsnetwork.github.io/teach-myself/logos/logo-512.png</url><title>Teach Myself</title><link>https://foxnewsnetwork.github.io/teach-myself</link></image><generator>GatsbyJS Material Starter</generator><lastBuildDate>Sun, 03 Feb 2019 21:03:54 GMT</lastBuildDate><atom:link href="https://foxnewsnetwork.github.io/teach-myself/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019. Thomas CHen]]></copyright><item><title><![CDATA[Exploration into Serverless Backend with Zeit]]></title><description><![CDATA[Exploration into Serverless Platform with Zeit Recently, I was reading Kent Dodd's blog post on  writing integration tests , and he casually…]]></description><link>https://foxnewsnetwork.github.io/teach-myself/exploration-into-serverless-backend-with-zeit</link><guid isPermaLink="false">https://foxnewsnetwork.github.io/teach-myself/exploration-into-serverless-backend-with-zeit</guid><category><![CDATA[serverless]]></category><category><![CDATA[lambda]]></category><category><![CDATA[investigation]]></category><category><![CDATA[research]]></category><category><![CDATA[backend]]></category><pubDate>Sun, 03 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;exploration-into-serverless-platform-with-zeit&quot;&gt;&lt;a href=&quot;#exploration-into-serverless-platform-with-zeit&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Exploration into Serverless Platform with Zeit&lt;/h1&gt;
+&lt;p&gt;Recently, I was reading Kent Dodd&apos;s blog post on &lt;a href=&quot;https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c&quot;&gt;writing integration tests&lt;/a&gt;, and he casually means that Guerillmo Ranch, the creator of &lt;a href=&quot;https://socket.io/&quot;&gt;socket.io&lt;/a&gt;, went on to create something called &lt;a href=&quot;https://zeit.co/&quot;&gt;zeit co&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;He mentions that this is some sort of serverless cloud competing platform.&lt;/p&gt;
+&lt;p&gt;To augment my ambition to build the UML slack bot, I&apos;m in the market for a serverless cloud platform that is competitive with aws, kubernetes, azure, etc.,&lt;/p&gt;
+&lt;p&gt;This blog post will document my initial explorations into zeit and what that site offers (especially in contrast to running app-sync and lambda on aws)&lt;/p&gt;
+&lt;h2 id=&quot;zeit-now&quot;&gt;&lt;a href=&quot;#zeit-now&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Zeit Now&lt;/h2&gt;
+&lt;p&gt;Picking the bombastically generic name &lt;a href=&quot;https://zeit.co/now&quot;&gt;Now&lt;/a&gt; for their serverless platform, zeit offers what appears to be lambda-like service where they promise to run things like:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;exports&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; res&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  res&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;doSomething&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;req&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE: it seems zeit does &lt;em&gt;NOT&lt;/em&gt; offer things like AppSync, IAM, API Gateway, and the entire massive stack of shit that is a part of AWS&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I follow the &lt;a href=&quot;https://zeit.co/docs/v2/getting-started/installation/&quot;&gt;installation guide&lt;/a&gt; and install this &quot;now&quot; thing via brew&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;zsh&quot;&gt;&lt;pre class=&quot;language-zsh&quot;&gt;&lt;code class=&quot;language-zsh&quot;&gt;npm install -g now&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;as well as connect them to my github account&lt;/p&gt;
+&lt;h2 id=&quot;spinning-up-a-new-project&quot;&gt;&lt;a href=&quot;#spinning-up-a-new-project&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Spinning up a New Project&lt;/h2&gt;
+&lt;p&gt;Now apparently supports deployment with just github deployment; as such, I will follow the &lt;a href=&quot;https://zeit.co/examples/monorepo/&quot;&gt;monorepo guide&lt;/a&gt; and modify our existing &lt;a href=&quot;https://github.com/foxnewsnetwork/sandbox-serverless&quot;&gt;sandbox-serverless&lt;/a&gt; repo to resemble the &lt;a href=&quot;https://github.com/zeit/now-examples/tree/master/monorepo&quot;&gt;monorepo example&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Sidnote: it seems zeit now currently supports node, go, python, and (for some reason) php&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In any case, after putting in a &quot;hello-world&quot;-esque &lt;code class=&quot;language-text&quot;&gt;api/index.go&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;api/index.js&lt;/code&gt; files, I move onto configuring my &lt;code class=&quot;language-text&quot;&gt;now.json&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;sandbox-serverless&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;builds&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token property&quot;&gt;&quot;src&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;api/go/*.go&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token property&quot;&gt;&quot;use&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;@now/go&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token property&quot;&gt;&quot;src&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;api/node/*.js&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token property&quot;&gt;&quot;use&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;@now/node&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;&quot;routes&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token property&quot;&gt;&quot;src&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/api/(.*)&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token property&quot;&gt;&quot;dest&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/api/$1&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Looking at this configuration, I would expect that I can make requests to &lt;code class=&quot;language-text&quot;&gt;api/go/&lt;/code&gt; to hit my &lt;code class=&quot;language-text&quot;&gt;index.go&lt;/code&gt; file.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Protip: the &lt;code class=&quot;language-text&quot;&gt;req&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;res&lt;/code&gt; objects used as arguments to lambda correspond to &lt;a href=&quot;https://nodejs.org/api/http.html#http_class_http_clientrequest&quot;&gt;Client Request&lt;/a&gt; and &lt;a href=&quot;https://nodejs.org/api/http.html#http_class_http_serverresponse&quot;&gt;Server Response&lt;/a&gt; respectively&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;An exact dissertation on the configuration of &lt;code class=&quot;language-text&quot;&gt;now.json&lt;/code&gt; is found &lt;a href=&quot;https://zeit.co/docs/v2/deployments/configuration&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We deploy with the &lt;code class=&quot;language-text&quot;&gt;now&lt;/code&gt; command&lt;/p&gt;
+&lt;h2 id=&quot;testing-our-deployment&quot;&gt;&lt;a href=&quot;#testing-our-deployment&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing our deployment&lt;/h2&gt;
+&lt;p&gt;A deployment result looks like: &lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/teach-myself/static/9c09f6c9d6118ea14f2495bf80d4d1af/5b451/deploy.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 548px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 40.87591240875912%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAABcElEQVQoz42R227CMBBETYEEB18CSQMJCRAChHJ5gFIkVLXw/z81HdOqF4mHPqws73pnZ49Fvltg+n5Ftt8j3x9g6yX8MIftRKitRqUVikBi0tVQ1oeIBIwx6Pf7GI1GsNZCCPET47xAwqJVCtlgAB0E6PgeJEXaUkJqDak0fOaVMpAe8+02JGuKPZp1J97r9W45kQ6HqGYzlJMJFlWF6+WC99dXnI5HvJ3PeKFzNyhNEhR5jiiObq7SNEXF9xP2zedz1HWNOI4pOC2xZNN4tcJ4u0O52WB9OqHm+gkbDEUEJz9oA9Fq/V3vXnSKMbq7HYKnNezzMwK6lXQdFgXKwwGGA4PB8JaTdGa4oud58H0fATG4090bjcanYMsBruZ4XCwQ0XqcZeiSYcCH1XSKDnl5zea3A8fpu/leNMMQhkJpvUJGDgVFHOBHMsvpUtHRw5egE/rj5l7IKESfggkhb8lxVpY36O7nWmTW/OXuP/EBfE+/DT+MUTcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;deployment results&quot;
+        title=&quot;&quot;
+        src=&quot;/teach-myself/static/9c09f6c9d6118ea14f2495bf80d4d1af/5b451/deploy.png&quot;
+        srcset=&quot;/teach-myself/static/9c09f6c9d6118ea14f2495bf80d4d1af/b1f55/deploy.png 168w,
+/teach-myself/static/9c09f6c9d6118ea14f2495bf80d4d1af/de8d5/deploy.png 336w,
+/teach-myself/static/9c09f6c9d6118ea14f2495bf80d4d1af/5b451/deploy.png 548w&quot;
+        sizes=&quot;(max-width: 548px) 100vw, 548px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now, I will test my endpoint at &lt;code class=&quot;language-text&quot;&gt;https://sandbox-serverless-jgwvcokcz.now.sh&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;First up, I load up my &lt;a href=&quot;https://insomnia.rest/&quot;&gt;insomnia client&lt;/a&gt; against the go endpoint:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;METHOD: GET
+URL: https://sandbox-serverless-jgwvcokcz.now.sh/api/go/index.go&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I have the following result (success)&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/teach-myself/static/190858eed2dce2ba5f3241843ded5309/0ff8c/go-result.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 672px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 16.799999999999997%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsSAAALEgHS3X78AAAAyklEQVQI12PIqdn4v7d52//Wur3/Gyp2/p8x8fD/ly9f/n/x4sX/Z8+e/X/y5PH/+/fv/793/97/J4+e/r/16Pz/g9dX/L995/b/u3fv/r99+zZQzZP/b9++BetjcI6u+G9mYP3fyMj+v7GRw38rS+f/3j6e/7283P97eLr99/J2B/I9gDQQe3n8d/dy+u/qbQNW4+PrBVcLUuPu4fqfwT224L+Jkfp/a1vz/2bmBv8NjLT/KyrJ4cTKygr/1VRV/quqKcGxkjJCHgA0IoXU/0wNsgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;go test result&quot;
+        title=&quot;&quot;
+        src=&quot;/teach-myself/static/190858eed2dce2ba5f3241843ded5309/e372f/go-result.png&quot;
+        srcset=&quot;/teach-myself/static/190858eed2dce2ba5f3241843ded5309/26d00/go-result.png 168w,
+/teach-myself/static/190858eed2dce2ba5f3241843ded5309/6bdce/go-result.png 336w,
+/teach-myself/static/190858eed2dce2ba5f3241843ded5309/e372f/go-result.png 672w,
+/teach-myself/static/190858eed2dce2ba5f3241843ded5309/cc870/go-result.png 1008w,
+/teach-myself/static/190858eed2dce2ba5f3241843ded5309/0ff8c/go-result.png 1125w&quot;
+        sizes=&quot;(max-width: 672px) 100vw, 672px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now, the harder test is to attempt to load the nodejs svg image result&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;METHOD: GET
+URL: https://sandbox-serverless-jgwvcokcz.now.sh/api/node/index.js&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Since I expect this to be an SVG file, I can post this directly into the browser. Amazingly enough, it works!&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/teach-myself/static/6d26e8bb1fd3af4098e13754fe2452d2/4534f/node-result.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 566px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 101.23674911660778%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAACRElEQVQ4y5VU2ZLaQAz0/39T3jbFU2pfstxr49jg9X1yH+6oRYYyEJyKqsQcHmm6Wxqs5fs7foy+YR4GaKoaZVUhLwr1ulmjKEpsNlvsdnsMx58YThyMpg5+juYyt/Ghezbmtoe548PK4gRpEaNsGgnaIcsLJFmGVPwrjBBnJZKU6xyut4S98HRc/PLhuL6MSzjirh8giBJY7XEP2lrQJEmqCWMZI7koimKk/ifCMEQo8y8ZmTyKYzmTCJsaVd2I1zrfCiBrOvnAZDKGv1wiz3M0kriWAxzbywmX2EYhaAuRoCxL7Pd7ubwRGTYKpG1b/qi3lwust7fvGAwGiOXW24GO7Y5nRR4EgV7UtYsk6DpjrccD3DRJOdZ1daUsTl2pszFztgvCYpLz+fyE7HA4KC1SJbLT6YQ0Ta+U12scj0c8miK8R1OrTrZtS0EiTTibzVBJKzHhcDhUaXiOEiwWi5u2BKYITUKiJK3VaiWaJVKURkczZxCTua6rSLln1hyJ/JbQJCUKBpIujYeI0oi+3W5VQxPMc931E2UGkQYDH7Uhg8e9Xg2ZhPQcx1HqRGa+sQDs0Wu73XfBU5XNggmoRSatwYSk/qo9HpN0zepWmEbBqSURm3b5G7VXZhl0DKaPx2OlTs1IczqdamtwbrT9J0L2GYNI1WjIPbYGJeAe+67bb70JiZCImIRztoF5PUTFNdvDVLqXMj/yZr4Iz/PuntSr1uhFSEp8Hb7vKzVWmlS7lf2vKvOhU3B69ud/z7yUvsBX9hvZ6AxrbD6b8wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;nodejs svg result&quot;
+        title=&quot;&quot;
+        src=&quot;/teach-myself/static/6d26e8bb1fd3af4098e13754fe2452d2/4534f/node-result.png&quot;
+        srcset=&quot;/teach-myself/static/6d26e8bb1fd3af4098e13754fe2452d2/ca603/node-result.png 168w,
+/teach-myself/static/6d26e8bb1fd3af4098e13754fe2452d2/0c16e/node-result.png 336w,
+/teach-myself/static/6d26e8bb1fd3af4098e13754fe2452d2/4534f/node-result.png 566w&quot;
+        sizes=&quot;(max-width: 566px) 100vw, 566px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Note: the &lt;code class=&quot;language-text&quot;&gt;graphizo&lt;/code&gt; thing label is unfortunate, so I&apos;ll probably have to generate my own images on lambda before I go live! @TODO for me&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;stuff-for-the-future&quot;&gt;&lt;a href=&quot;#stuff-for-the-future&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Stuff for the future&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Figure out what to do with the &lt;code class=&quot;language-text&quot;&gt;graphizo&lt;/code&gt; stuff&lt;/li&gt;
+&lt;li&gt;Figure out how to handle caching data&lt;/li&gt;
+&lt;li&gt;Connect the slack bot to the zeit back-end&lt;/li&gt;
+&lt;li&gt;Learn about authentication with zeit co&lt;/li&gt;
+&lt;li&gt;Figure out a language to annotate images with graphs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;appendix&quot;&gt;&lt;a href=&quot;#appendix&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Appendix&lt;/h1&gt;
+&lt;h2 id=&quot;a1---tldr-on-writing-tests-not-too-many-and-mostly-integration&quot;&gt;&lt;a href=&quot;#a1---tldr-on-writing-tests-not-too-many-and-mostly-integration&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A1 - TL;DR on Writing Tests, Not too many, and Mostly Integration&lt;/h2&gt;
+&lt;p&gt;The gist of Kent Dodd&apos;s blog post on &lt;a href=&quot;https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c&quot;&gt;writing integration tests&lt;/a&gt; is summarized as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Unit tests&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Good as training wheels to help the developer learn how to code&lt;/li&gt;
+&lt;li&gt;Cheap and write and run&lt;/li&gt;
+&lt;li&gt;Nearly completely useless for testing application&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Acceptance tests (aka application tests)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tests &lt;em&gt;exactly&lt;/em&gt; what the user will see, so provides application value&lt;/li&gt;
+&lt;li&gt;Expensive to write and slow to run&lt;/li&gt;
+&lt;li&gt;Brittle&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Integration tests&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A good compromise between the unit and acceptance&lt;/li&gt;
+&lt;li&gt;Focus on writing these&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some side notes&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Coverage is a dumb metric to cover&lt;/li&gt;
+&lt;li&gt;Coverage only matters in functional library code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;a2---on-nextjs&quot;&gt;&lt;a href=&quot;#a2---on-nextjs&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A2 - On Next.JS&lt;/h2&gt;
+&lt;p&gt;While looking through the example docs, I come across this thing called &quot;next.js&quot;&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/teach-myself/static/ed0ed34d2c8325dcf77ba6a84ddfef9e/c0945/nextjs.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 531px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 82.4858757062147%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsSAAALEgHS3X78AAABi0lEQVQ4y51Ua4+CMBDk//83TfzkFzXyEBCkvKEgMMcs0VMPD++abFqgO53uzGJcr1eUZQmtNZqmAccwDBK39ePcti2yPEVZlaiqSnIZeZ7LbHBxOByw2+1QFMVT8hxgVVbwLB+n0wnH4xH7/R62ZcM9eTBNEwZPISjZdV33K0NZ9+NDDqRpijiOEQQBlFLAmBrHCgZZ8eMrozmG9xDU59EP0zthGEXRLLt3gLrW6Pte1tSg774PMOq6xvl8lgJ/ypCDedvtVuofJCkUBWr1BOi6rmz4lCEHFV2tViJEVOYIiwxxXU6AnufJhk8BGbwyxXAcB6E/3rDRUATkVanUkv9eAUWIEZT1t0aWqipgJtHE8HK5zJp6CZA5YRjCsW3Eo9GtVE0Mfd9HlmXSBf9lSEBhSEAyZB2p9pKx7x0z5rGGnG8WEttQjFsN/6Iyfcv2syxLCNVtg0zXE0Pahj+HucSlKxOMPU0wN09gEOhVlCVjE4gdwuDzY5cZSZJgvV5js9n8YPUOkM54d/AXfx3jZbpXOPAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;next js in tab bar&quot;
+        title=&quot;&quot;
+        src=&quot;/teach-myself/static/ed0ed34d2c8325dcf77ba6a84ddfef9e/c0945/nextjs.png&quot;
+        srcset=&quot;/teach-myself/static/ed0ed34d2c8325dcf77ba6a84ddfef9e/85ccd/nextjs.png 168w,
+/teach-myself/static/ed0ed34d2c8325dcf77ba6a84ddfef9e/80800/nextjs.png 336w,
+/teach-myself/static/ed0ed34d2c8325dcf77ba6a84ddfef9e/c0945/nextjs.png 531w&quot;
+        sizes=&quot;(max-width: 531px) 100vw, 531px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After some research, it seems &lt;a href=&quot;https://nextjs.org/&quot;&gt;next.js&lt;/a&gt; is a react-based server-side rendering framework for building the so-called &quot;progressive&quot; web-app. This might be relevant for my actual work at SONY, though not so much for my side hobby projects.&lt;/p&gt;
+&lt;p&gt;In any case, I might wind up doing a blog post about it later on&lt;/p&gt;
+&lt;h2 id=&quot;a3---graphizo&quot;&gt;&lt;a href=&quot;#a3---graphizo&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A3 - Graphizo&lt;/h2&gt;
+&lt;p&gt;Although eventually, I would like to (at least partially) handle UML rendering in my own lambda, for now, I can use this URL based service called &lt;a href=&quot;http://www.gravizo.com/&quot;&gt;graphizo&lt;/a&gt; to get started.&lt;/p&gt;
+&lt;p&gt;Eventually, because I&apos;d like to support&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;animated flow-charts&lt;/li&gt;
+&lt;li&gt;in-place editing&lt;/li&gt;
+&lt;li&gt;image-annotating diagrams&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;that would require me to setup my own parse engine, I&apos;d need to move off of graphizo&lt;/p&gt;
+&lt;p&gt;For funsies, here&apos;s an example of a graphizo rendered diagram:&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;
+&lt;p&gt;&lt;img src=&quot;https://g.gravizo.com/svg?%0A%20%20digraph%20G%20%7B%0A%20%20%20%20aize%20=%224,4%22;%0A%20%20%20%20main%20%5Bshape=box%5D;%0A%20%20%20%20main%20-%3E%20parse%20%5Bweight=8%5D;%0A%20%20%20%20parse%20-%3E%20execute;%0A%20%20%20%20main%20-%3E%20init%20%5Bstyle=dotted%5D;%0A%20%20%20%20main%20-%3E%20cleanup;%0A%20%20%20%20execute%20-%3E%20%7B%20make_string;%20printf%7D%0A%20%20%20%20init%20-%3E%20make_string;%0A%20%20%20%20edge%20%5Bcolor=red%5D;%0A%20%20%20%20main%20-%3E%20printf%20%5Bstyle=bold,label=%22100%20times%22%5D;%0A%20%20%20%20make_string%20%5Blabel=%22make%20a%20string%22%5D;%0A%20%20%20%20node%20%5Bshape=box,style=filled,color=%22.7%20.3%201.0%22%5D;%0A%20%20%20%20execute%20-%3E%20compare;%0A%20%20%7D&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
+&lt;/summary&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;![Alt text](https://g.gravizo.com/svg?
+  digraph G {
+&lt;span class=&quot;token code keyword&quot;&gt;    aize =&quot;4,4&quot;;&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;    main [shape=box];&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;    main -&gt; parse [weight=8];&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;    parse -&gt; execute;&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;    main -&gt; init [style=dotted];&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;    main -&gt; cleanup;&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;    execute -&gt; { make_string; printf}&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;    init -&gt; make_string;&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;    edge [color=red];&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;    main -&gt; printf [style=bold,label=&quot;100 times&quot;];&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;    make_string [label=&quot;make a string&quot;];&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;    node [shape=box,style=filled,color=&quot;.7 .3 1.0&quot;];&lt;/span&gt;
+&lt;span class=&quot;token code keyword&quot;&gt;    execute -&gt; compare;&lt;/span&gt;
+  }
+)&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;</content:encoded><author>foxnewsnetworkr@example.com</author></item><item><title><![CDATA[My First Slack Bot]]></title><description><![CDATA[Putting Together a Slack Bot Here, I document and go over the steps it took me to setup a slack bot. The ultimate vision is eventually get…]]></description><link>https://foxnewsnetwork.github.io/teach-myself/my-first-slack-bot</link><guid isPermaLink="false">https://foxnewsnetwork.github.io/teach-myself/my-first-slack-bot</guid><category><![CDATA[slack]]></category><category><![CDATA[bot]]></category><category><![CDATA[setup]]></category><category><![CDATA[howto]]></category><pubDate>Sat, 02 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;putting-together-a-slack-bot&quot;&gt;&lt;a href=&quot;#putting-together-a-slack-bot&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Putting Together a Slack Bot&lt;/h1&gt;
 &lt;p&gt;Here, I document and go over the steps it took me to setup a slack bot.&lt;/p&gt;
 &lt;p&gt;The ultimate vision is eventually get this slack bot to process UML and drawing languages and return diagrams directly into slack, then charge companies some amount of money for this service.&lt;/p&gt;
 &lt;h2 id=&quot;going-through-documentation&quot;&gt;&lt;a href=&quot;#going-through-documentation&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Going through documentation&lt;/h2&gt;
