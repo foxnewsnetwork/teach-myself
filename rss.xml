@@ -1,4 +1,138 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Teach Myself]]></title><description><![CDATA[Thomas Chen's blog on machine learning, programming, physics, engineering, and other things built on GatsbyJS stater with Material design in mind.]]></description><link>https://foxnewsnetwork.github.io/teach-myself</link><image><url>https://foxnewsnetwork.github.io/teach-myself/logos/logo-512.png</url><title>Teach Myself</title><link>https://foxnewsnetwork.github.io/teach-myself</link></image><generator>GatsbyJS Material Starter</generator><lastBuildDate>Sun, 03 Feb 2019 21:03:54 GMT</lastBuildDate><atom:link href="https://foxnewsnetwork.github.io/teach-myself/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019. Thomas CHen]]></copyright><item><title><![CDATA[Exploration into Serverless Backend with Zeit]]></title><description><![CDATA[Exploration into Serverless Platform with Zeit Recently, I was reading Kent Dodd's blog post on  writing integration tests , and he casually…]]></description><link>https://foxnewsnetwork.github.io/teach-myself/exploration-into-serverless-backend-with-zeit</link><guid isPermaLink="false">https://foxnewsnetwork.github.io/teach-myself/exploration-into-serverless-backend-with-zeit</guid><category><![CDATA[serverless]]></category><category><![CDATA[lambda]]></category><category><![CDATA[investigation]]></category><category><![CDATA[research]]></category><category><![CDATA[backend]]></category><pubDate>Sun, 03 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;exploration-into-serverless-platform-with-zeit&quot;&gt;&lt;a href=&quot;#exploration-into-serverless-platform-with-zeit&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Exploration into Serverless Platform with Zeit&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Teach Myself]]></title><description><![CDATA[Thomas Chen's blog on machine learning, programming, physics, engineering, and other things built on GatsbyJS stater with Material design in mind.]]></description><link>https://foxnewsnetwork.github.io/teach-myself</link><image><url>https://foxnewsnetwork.github.io/teach-myself/logos/logo-512.png</url><title>Teach Myself</title><link>https://foxnewsnetwork.github.io/teach-myself</link></image><generator>GatsbyJS Material Starter</generator><lastBuildDate>Sun, 17 Feb 2019 19:48:53 GMT</lastBuildDate><atom:link href="https://foxnewsnetwork.github.io/teach-myself/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019. Thomas CHen]]></copyright><item><title><![CDATA[First Steps into Rendering with Zeit]]></title><description><![CDATA[First Steps and Forward Strategy for Graphing on Zeit The idea here to come up with a strategy and goal for building out graphing endpoints…]]></description><link>https://foxnewsnetwork.github.io/teach-myself/first-steps-into-rendering-with-zeit</link><guid isPermaLink="false">https://foxnewsnetwork.github.io/teach-myself/first-steps-into-rendering-with-zeit</guid><category><![CDATA[uml]]></category><category><![CDATA[diagram]]></category><category><![CDATA[graphs]]></category><category><![CDATA[business]]></category><category><![CDATA[research]]></category><category><![CDATA[backend]]></category><pubDate>Sun, 17 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;first-steps-and-forward-strategy-for-graphing-on-zeit&quot;&gt;&lt;a href=&quot;#first-steps-and-forward-strategy-for-graphing-on-zeit&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;First Steps and Forward Strategy for Graphing on Zeit&lt;/h1&gt;
+&lt;p&gt;The idea here to come up with a strategy and goal for building out graphing endpoints on zeit.co as inspired by &lt;a href=&quot;https://shd101wyy.github.io/markdown-preview-enhanced/#/&quot;&gt;enhanced markdown preview&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;rendering-goals&quot;&gt;&lt;a href=&quot;#rendering-goals&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rendering Goals&lt;/h2&gt;
+&lt;p&gt;Currently, the enhanced markdown preview offers rendering for the following mark-ups:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://shd101wyy.github.io/markdown-preview-enhanced/#/math&quot;&gt;KateX / MathJax&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://flowchart.js.org/&quot;&gt;FlowChart.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://bramp.github.io/js-sequence-diagrams/&quot;&gt;js sequence diagrams&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/knsv/mermaid&quot;&gt;mermaid&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://plantuml.com/&quot;&gt;plantuml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wavedrom.com/&quot;&gt;wavedrom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/mdaines/viz.js&quot;&gt;graphviz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vega.github.io/vega/&quot;&gt;vega / vega lit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/stathissideris/ditaa&quot;&gt;ditaa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For further reading, here is the &lt;a href=&quot;https://github.com/fasouto/awesome-dataviz&quot;&gt;curated list of awesome visualization&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The desired techbical goal is to essentially build graphizo myself for the above 9 renderers:&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/teach-myself/static/5b12a2a4cfa031521cc7f4229cb7130c/6d6d3/render-stack.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 672px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 46.723044397463006%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABBElEQVQoz41Rya6EMAzr//8c4sqVRez7TkkmjqjEe6DRRLJIU8cxqWHmTWCJSHHP3XmaJpumqd227fXefQFzHb7GeZ5cliX/EuZSRpADQkRo33ea55mKoqAwDKlpGhKXeoe49ziow+M4WEDyazwMA7dtq46ALMu4rmvN8zzXM3IRV+44jnz1wwmbqqpsFEUgk+yJATQC4ozjOGYMQr3rOhVE3XGSJNE7aGCQwaIFaKK+77UJjgAZxqjBCZqRw5m7Bxc1uITGuq6PHbK1lmV3vCyLkjHV8zwOgoB931cROIYAuI9Hca9M5Pb8DOwHe8Vr/w/03PFH8I2AkJfWXcL5G8fx8P0ATIS8ltOhZSkAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;rendered digraph&quot;
+        title=&quot;&quot;
+        src=&quot;/teach-myself/static/5b12a2a4cfa031521cc7f4229cb7130c/e372f/render-stack.png&quot;
+        srcset=&quot;/teach-myself/static/5b12a2a4cfa031521cc7f4229cb7130c/26d00/render-stack.png 168w,
+/teach-myself/static/5b12a2a4cfa031521cc7f4229cb7130c/6bdce/render-stack.png 336w,
+/teach-myself/static/5b12a2a4cfa031521cc7f4229cb7130c/e372f/render-stack.png 672w,
+/teach-myself/static/5b12a2a4cfa031521cc7f4229cb7130c/6d6d3/render-stack.png 946w&quot;
+        sizes=&quot;(max-width: 672px) 100vw, 672px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;/summary&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;dot&quot;&gt;&lt;pre class=&quot;language-dot&quot;&gt;&lt;code class=&quot;language-dot&quot;&gt;digraph G {
+  GET -&amp;gt; Decider
+  Decider -&amp;gt; math
+  Decider -&amp;gt; flow
+  Decider -&amp;gt; seq
+  Decider -&amp;gt; mermaid
+  Decider -&amp;gt; puml
+  Decider -&amp;gt; wave
+  Decider -&amp;gt; dot
+  Decider -&amp;gt; vega
+  Decider -&amp;gt; ditaa
+  math -&amp;gt; PNG
+  flow -&amp;gt; PNG
+  seq -&amp;gt; PNG
+  mermaid -&amp;gt; PNG
+  puml -&amp;gt; PNG
+  wave -&amp;gt; PNG
+  dot -&amp;gt; PNG
+  vega -&amp;gt; PNG
+  ditaa -&amp;gt; PNG
+  PNG -&amp;gt; Resp
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/details&gt;
+&lt;blockquote&gt;
+&lt;p&gt;NOTE TO SELF: I should build some plugins into this blog site so that I can get proper graph rendering instead of manually copy+pasting stuff into say &lt;a href=&quot;http://viz-js.com/&quot;&gt;vis-js.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;business-direction&quot;&gt;&lt;a href=&quot;#business-direction&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Business Direction&lt;/h2&gt;
+&lt;p&gt;So the question here would be how to make money with this thing. The idea would be to then rent rendering services to corporations and offer them the ability to customize what DNS and domains can hit what save diagram&lt;/p&gt;
+&lt;p&gt;So... how do we do this? At this point, I&apos;m not too sure, so I&apos;ll have some research to do.&lt;/p&gt;
+&lt;p&gt;A good starting point might be &lt;a href=&quot;http://www.gravizo.com/#pricing&quot;&gt;graphizo&apos;s pricing&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/teach-myself/static/b3894aafa0dde20c75bb6927dff94ff1/49a2d/graphizo-pricing.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 672px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 42.26190476190476%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsSAAALEgHS3X78AAAB40lEQVQoz0WRzW8SURTF2ZgCQydIq/2gGG2NadHYLxMlxrbWdOPClVtdujBRW0oZGGbGMl8MwwADyldc+w90ZdwY/7LjeU8TFzeTuefd837nvsSyHWLL7yFbbyJ5YULRPkOpWlAMF3ecDu55XWy4HWT+9dOsrOVjs9XDXTfCujjjd1G4bCFNj8QtHn4xnGI/HGA76GGxdolUWYdCcZe959SOBlNseRHS5w2kWAumJ3sH8QSHgwmK1HKaJWFoGFGc4GT0DcdfZlikkTTUbTwM+jiiodD2O8P/hiR82h/zspnUCvy/dlpDhjCJAgmPOVTqfcVtgV0xoHBIGG63Y3nJHklv8l8YCn3B9Ek2xbN4LOnmxarEjDDMO6EkFLfMndUlgSAU+9gJY5KMkGWcOfaEJr45EZkQRT9iT0dSaCKVJgztDg7jGdabAVYMB3nTxRpLbTh40IrxJBpjRfewykdaszwssZ8j4QFndoIhlnQXqzyfp66KR8m7LTyOQyzzYIZxVOKrF4xdt1FsB3jUbzOiBlX7q2VY100HpUEX90MX2UYVatXEPGflDjdGGk6u3iFVYcxzU+4oXWkgWWui9P0D3v4u4/XPT7hhl5E8MxnRQs4x8OrHe7z5VcHLq4/cncbIhtzhH+xRVvYSwZAXAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;graphizo-pricing choices&quot;
+        title=&quot;&quot;
+        src=&quot;/teach-myself/static/b3894aafa0dde20c75bb6927dff94ff1/e372f/graphizo-pricing.png&quot;
+        srcset=&quot;/teach-myself/static/b3894aafa0dde20c75bb6927dff94ff1/26d00/graphizo-pricing.png 168w,
+/teach-myself/static/b3894aafa0dde20c75bb6927dff94ff1/6bdce/graphizo-pricing.png 336w,
+/teach-myself/static/b3894aafa0dde20c75bb6927dff94ff1/e372f/graphizo-pricing.png 672w,
+/teach-myself/static/b3894aafa0dde20c75bb6927dff94ff1/cc870/graphizo-pricing.png 1008w,
+/teach-myself/static/b3894aafa0dde20c75bb6927dff94ff1/49a2d/graphizo-pricing.png 1176w&quot;
+        sizes=&quot;(max-width: 672px) 100vw, 672px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;In any case, I think a list of @TODOs in the following order makes sense:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Step up 2 renderers on zeit&lt;/li&gt;
+&lt;li&gt;Step up decider on zeit&lt;/li&gt;
+&lt;li&gt;Ensure rendered results can properly show up in slack&lt;/li&gt;
+&lt;li&gt;Setup slack bot to automate generating the URL&lt;/li&gt;
+&lt;li&gt;Figure out how to setup DNS and CDNs&lt;/li&gt;
+&lt;li&gt;Connect with some sort of subscription payment system&lt;/li&gt;
+&lt;li&gt;Setup domain&lt;/li&gt;
+&lt;li&gt;Test live&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;setting-up-flowchartjs&quot;&gt;&lt;a href=&quot;#setting-up-flowchartjs&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Setting up FlowChart.JS&lt;/h2&gt;
+&lt;p&gt;The rest of this blog will be about me setting up the &lt;a href=&quot;https://github.com/adrai/flowchart.js&quot;&gt;FlowChart&lt;/a&gt; onto zeit so that I can prove to myself it can be made to generate PNGs&lt;/p&gt;
+&lt;p&gt;The code for this can be found in my &lt;a href=&quot;https://github.com/foxnewsnetwork/sandbox-serverless/tree/master/api/flowchart&quot;&gt;serverless sandbox&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;FlowChart.js uses Raphael to draw SVGs&lt;/li&gt;
+&lt;li&gt;We must use a SVG to PNG converter such as &lt;a href=&quot;https://www.npmjs.com/package/convert-svg-to-png&quot;&gt;this&lt;/a&gt; to send down a file from text&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;From their github, it looks like they straight-up must load chrominum to take a screenshot. I have no idea if this will work in a lambda environment where I am contrained to slug sizes&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It works by using headless Chromium to take a screenshot of the SVG and outputs the buffer. This does mean that the supported output formats is limited to those supported by that the API for headless Chromium, however, as more formats are added, additional packages can easily be created.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;uh-oh-bad-news&quot;&gt;&lt;a href=&quot;#uh-oh-bad-news&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Uh-oh, bad news&lt;/h2&gt;
+&lt;p&gt;After investigation, it seems to properly render FlowChart (and possibly other dom-based things), we can&apos;t go full serverless due to cold-boot and slug-size requirements.&lt;/p&gt;
+&lt;p&gt;This means that I&apos;ll have to look into using docker images and containers to string together a bunch of docker services to perform this job. &lt;/p&gt;
+&lt;p&gt;I&apos;ll have to figure out how to do that in a future blog post&lt;/p&gt;</content:encoded><author>foxnewsnetworkr@example.com</author></item><item><title><![CDATA[Exploration into Serverless Backend with Zeit]]></title><description><![CDATA[Exploration into Serverless Platform with Zeit Recently, I was reading Kent Dodd's blog post on  writing integration tests , and he casually…]]></description><link>https://foxnewsnetwork.github.io/teach-myself/exploration-into-serverless-backend-with-zeit</link><guid isPermaLink="false">https://foxnewsnetwork.github.io/teach-myself/exploration-into-serverless-backend-with-zeit</guid><category><![CDATA[serverless]]></category><category><![CDATA[lambda]]></category><category><![CDATA[investigation]]></category><category><![CDATA[research]]></category><category><![CDATA[backend]]></category><pubDate>Sun, 03 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;exploration-into-serverless-platform-with-zeit&quot;&gt;&lt;a href=&quot;#exploration-into-serverless-platform-with-zeit&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Exploration into Serverless Platform with Zeit&lt;/h1&gt;
 &lt;p&gt;Recently, I was reading Kent Dodd&apos;s blog post on &lt;a href=&quot;https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c&quot;&gt;writing integration tests&lt;/a&gt;, and he casually means that Guerillmo Ranch, the creator of &lt;a href=&quot;https://socket.io/&quot;&gt;socket.io&lt;/a&gt;, went on to create something called &lt;a href=&quot;https://zeit.co/&quot;&gt;zeit co&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;He mentions that this is some sort of serverless cloud competing platform.&lt;/p&gt;
 &lt;p&gt;To augment my ambition to build the UML slack bot, I&apos;m in the market for a serverless cloud platform that is competitive with aws, kubernetes, azure, etc.,&lt;/p&gt;
