@@ -51,6 +51,8 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.4",
+    "gatsby-remark-graphviz": "^1.0.7",
+    "gatsby-remark-sequence": "^0.0.2",
     "gh-pages": "^2.0.1",
     "prettier": "^1.16.0",
     "remark-cli": "^6.0.1",

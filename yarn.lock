@@ -5739,6 +5739,15 @@ gatsby-remark-copy-linked-files@2.0.8:
     probe-image-size "^4.0.0"
     unist-util-visit "^1.3.0"
 
+gatsby-remark-graphviz@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-graphviz/-/gatsby-remark-graphviz-1.0.7.tgz#ed040e47de1e75087cd9038b706dc130bffd17f8"
+  integrity sha512-Csdvd7OMz9X8Hl2mQDOwX0se9+sBUB/JHyW6oV/xzsk9tpTaUMESfDzc4L3jtWu/4eWOHZ/PZaDkdKZtZfkGDg==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    unist-util-visit "^1.4.0"
+    viz.js "^2.0.0"
+
 gatsby-remark-images@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-remark-images/-/gatsby-remark-images-3.0.1.tgz#01ac72451841ba5b82b9b260fe99ffca005c1eb4"
@@ -5784,6 +5793,13 @@ gatsby-remark-responsive-iframe@2.0.8:
     cheerio "^1.0.0-rc.2"
     lodash "^4.17.10"
     unist-util-visit "^1.3.0"
+
+gatsby-remark-sequence@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-sequence/-/gatsby-remark-sequence-0.0.2.tgz#1b8aefefd74bd1eb14cedf975d142f4c5ca8cd9c"
+  integrity sha512-6ISWvQUdwNrouwci8LiRgiWrRxe2Rp6qelYyOi9LICX1Ys6zLGMiK8Ht7tC04kR9q9Ooh5DjMyK7DsT+hpQLuQ==
+  dependencies:
+    unist-util-visit "^1.1.3"
 
 gatsby-source-filesystem@2.0.16:
   version "2.0.16"
@@ -14507,7 +14523,7 @@ unist-util-visit-parents@^2.0.0, unist-util-visit-parents@^2.0.1:
   dependencies:
     unist-util-is "^2.1.2"
 
-unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.1.1, unist-util-visit@^1.3.0:
+unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.1.1, unist-util-visit@^1.1.3, unist-util-visit@^1.3.0, unist-util-visit@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.4.0.tgz#1cb763647186dc26f5e1df5db6bd1e48b3cc2fb1"
   dependencies:
@@ -14823,6 +14839,11 @@ vinyl@^1.0.0:
     clone "^1.0.0"
     clone-stats "^0.0.1"
     replace-ext "0.0.1"
+
+viz.js@^2.0.0:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/viz.js/-/viz.js-2.1.2.tgz#6f09cd4e10af28754a6d50b055bd2e4a7693983a"
+  integrity sha512-UO6CPAuEMJ8oNR0gLLNl+wUiIzQUsyUOp8SyyDKTqVRBtq7kk1VnFmIZW8QufjxGrGEuI+LVR7p/C7uEKy0LQw==
 
 vm-browserify@0.0.4:
   version "0.0.4"
