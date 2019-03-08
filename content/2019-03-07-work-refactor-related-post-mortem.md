@@ -227,3 +227,34 @@ After all, if they clicked into a recently viewed tile, chances are it was the c
 ```
 2. *IF* we care to fix this bug, we *WILL* have to ship a release where we wipe the user's recently viewed
 3. As a bonus, we get `tileTrackingId` and those other fields that should be there but aren't to show up for free
+
+## Appendix 1: How the telemetry system works
+
+```sequence
+title: How Super Clicks Becomes Broken
+participant pdp
+participant localStorage
+participant redux
+participant recentlyViewed
+participant trendingSearch
+participant sendClickTileEvent
+participant telemetry
+
+localStorage -> redux : getItem('visitedPdps')
+redux -> recentlyViewed : ok visitedPdps
+recentlyViewed -> sendClickTileEvent : CarouselTile
+sendClickTileEvent -> telemetry : ok 602.0270
+recentlyViewed -> redux : ok saveVisitedPdp
+redux -> localStorage : persist ok tile
+recentlyViewed -> pdp : user visits
+note right of pdp: later...
+trendingSearch -> sendClickTileEvent : GridTile
+sendClickTileEvent -> telemetry : bad 602.0270
+trendingSearch -> redux : bad saveVisitedPdp
+redux -> localStorage : persist bad tile
+trendingSearch -> pdp : user visits
+note right of pdp: later...
+redux -> recentlyViewed : bad visitedPdps
+recentlyViewed -> sendClickTileEvent : JustIdTile
+sendClickTileEvent -> telemetry : bad 602.0270
+```
