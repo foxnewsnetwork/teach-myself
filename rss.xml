@@ -1,4 +1,126 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Teach Myself]]></title><description><![CDATA[Thomas Chen's blog on machine learning, programming, physics, engineering, and other things built on GatsbyJS stater with Material design in mind.]]></description><link>https://foxnewsnetwork.github.io/teach-myself</link><image><url>https://foxnewsnetwork.github.io/teach-myself/logos/logo-512.png</url><title>Teach Myself</title><link>https://foxnewsnetwork.github.io/teach-myself</link></image><generator>GatsbyJS Material Starter</generator><lastBuildDate>Sat, 02 Mar 2019 18:31:02 GMT</lastBuildDate><atom:link href="https://foxnewsnetwork.github.io/teach-myself/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019. Thomas CHen]]></copyright><item><title><![CDATA[Investigation into Kubernetes]]></title><description><![CDATA[Introduction to Kubernetes In my previous post, I experimented with attempting to use zeit.co for lambdas in an attempt to render graphs…]]></description><link>https://foxnewsnetwork.github.io/teach-myself/investigation-into-kubernetes</link><guid isPermaLink="false">https://foxnewsnetwork.github.io/teach-myself/investigation-into-kubernetes</guid><category><![CDATA[kubenets]]></category><category><![CDATA[aws]]></category><category><![CDATA[devops]]></category><pubDate>Sat, 02 Mar 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;introduction-to-kubernetes&quot;&gt;&lt;a href=&quot;#introduction-to-kubernetes&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction to Kubernetes&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Teach Myself]]></title><description><![CDATA[Thomas Chen's blog on machine learning, programming, physics, engineering, and other things built on GatsbyJS stater with Material design in mind.]]></description><link>https://foxnewsnetwork.github.io/teach-myself</link><image><url>https://foxnewsnetwork.github.io/teach-myself/logos/logo-512.png</url><title>Teach Myself</title><link>https://foxnewsnetwork.github.io/teach-myself</link></image><generator>GatsbyJS Material Starter</generator><lastBuildDate>Mon, 18 Mar 2019 20:10:05 GMT</lastBuildDate><atom:link href="https://foxnewsnetwork.github.io/teach-myself/rss.xml" rel="self" type="application/rss+xml"/><copyright><![CDATA[Copyright © 2019. Thomas CHen]]></copyright><item><title><![CDATA[Investigation into Docker]]></title><description><![CDATA[Introduction to Docker In my  previous post , I did a nascent investigation into kubernetes, what it is, and how to use it. From that…]]></description><link>https://foxnewsnetwork.github.io/teach-myself/investigation-into-docker</link><guid isPermaLink="false">https://foxnewsnetwork.github.io/teach-myself/investigation-into-docker</guid><category><![CDATA[docker]]></category><category><![CDATA[aws]]></category><category><![CDATA[devops]]></category><category><![CDATA[container]]></category><pubDate>Mon, 18 Mar 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;introduction-to-docker&quot;&gt;&lt;a href=&quot;#introduction-to-docker&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction to Docker&lt;/h1&gt;
+&lt;p&gt;In my &lt;a href=&quot;https://foxnewsnetwork.github.io/teach-myself/investigation-into-kubernetes&quot;&gt;previous post&lt;/a&gt;, I did a nascent investigation into kubernetes, what it is, and how to use it. From that investigation, I learned the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;kube is for scaling up containers across multiple physical machines&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And came the conclusion that I needed put together my containers before I should get to figuring out their deployment strategies. So in this post, I will try to answer the following:&lt;/p&gt;
+&lt;p&gt;Q: What is docker?
+Q: What is I docker-compose?&lt;/p&gt;
+&lt;h2 id=&quot;what-is-docker&quot;&gt;&lt;a href=&quot;#what-is-docker&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;What is Docker?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://hub.docker.com/&quot;&gt;Docker hub&lt;/a&gt;, much like github, is a place where folks upload and share their containers (which can be thought of as computers with &lt;em&gt;very&lt;/em&gt; specialized functionalities). Just like node.js projects on github can be run by any machine that has node.js installed, docker containers can be run by any machine that supports docker.&lt;/p&gt;
+&lt;p&gt;Before I go down the route of using docker to containerizes everything, though, I should conside some counterpoints. Starting with this &lt;a href=&quot;https://www.linkedin.com/pulse/goodbye-docker-thanks-all-fish-maish-saidel-keesing/&quot;&gt;so-long docker article&lt;/a&gt;, here are some points I should investigate:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.opencontainers.org/&quot;&gt;open container inititive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;tldr&quot;&gt;&lt;a href=&quot;#tldr&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;TL;DR&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Docker as a run-time and a company is being superceded by podman and other native linux techs&lt;/li&gt;
+&lt;li&gt;People at OCI are building container tools directly into Linux OS&lt;/li&gt;
+&lt;li&gt;As an end user, I don&apos;t need to worry about underlying runtime and continue using docker containers and whatnot&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;ecs-and-fargate&quot;&gt;&lt;a href=&quot;#ecs-and-fargate&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ECS and Fargate&lt;/h2&gt;
+&lt;p&gt;For me, this means that the process through which I can get my graphing backend working is as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Create or compose local docker images that use graphviz and other tools&lt;/li&gt;
+&lt;li&gt;Put together a lambda that will proxy to the images&lt;/li&gt;
+&lt;li&gt;Ensure everything works on local docker / lambda&lt;/li&gt;
+&lt;li&gt;Deploy to AWS &lt;a href=&quot;https://aws.amazon.com/ecs/&quot;&gt;ECS&lt;/a&gt; and &lt;a href=&quot;https://aws.amazon.com/fargate/&quot;&gt;Fargate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Build slack bot to hit endpoint&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/teach-myself/static/4868d73d217bd191a8851bb951de91fe/e64b2/fargate.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 672px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 31.75105485232067%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsSAAALEgHS3X78AAABM0lEQVQY002QzW6DMBCE8/5PVamHHitFLU1JCzRpQkJpwP82a3u6WDkU6ZPXWpgZZqOdx0KxEBZiFp7pPhO8MfBKwE0DvBj5rgrB8mllYXGa7xLGGmzWj4gFvA8AMpTN6M4W/UgsnJFYhPoa8boDiRNyJOQUEWnh11NBa4UYLMhrbDwLnvoL6s8W1jlQTNjtO1yGG2KMbMHPdADmtswpJUyz4DRu3WCWEufrAOcMKHBCITW+jifsmw7jbcIv8/D4hO1LVZI7Tt7Wb+jqCtpYSKWwZ/PhZyyGh+8zh+mgpCgpNy4sxXVdrvgQUH806Nl1rUBKhedtVZiFYEGNpjviOoxQ2uClqrF9fUfTtPdfZsGcuavE8FmE/xmsMwUP0hLE5SdvkDlJXtbOuDsWiUHzTsDz/g8c/cxYx6oO8QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;fargate diagram&quot;
+        title=&quot;&quot;
+        src=&quot;/teach-myself/static/4868d73d217bd191a8851bb951de91fe/e372f/fargate.png&quot;
+        srcset=&quot;/teach-myself/static/4868d73d217bd191a8851bb951de91fe/26d00/fargate.png 168w,
+/teach-myself/static/4868d73d217bd191a8851bb951de91fe/6bdce/fargate.png 336w,
+/teach-myself/static/4868d73d217bd191a8851bb951de91fe/e372f/fargate.png 672w,
+/teach-myself/static/4868d73d217bd191a8851bb951de91fe/e64b2/fargate.png 948w&quot;
+        sizes=&quot;(max-width: 672px) 100vw, 672px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;docker-images&quot;&gt;&lt;a href=&quot;#docker-images&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker Images&lt;/h2&gt;
+&lt;p&gt;Eventual AWS deployment aside, I can get started on docker by running it locally. Let&apos;s get started with getting the &lt;a href=&quot;https://hub.docker.com/r/omerio/graphviz-server&quot;&gt;graphviz thing&lt;/a&gt; running locally. I&apos;m honestly not too sure how to do everything, so let&apos;s just get started by doing and we can think / reason later&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;zsh&quot;&gt;&lt;pre class=&quot;language-zsh&quot;&gt;&lt;code class=&quot;language-zsh&quot;&gt;mkdir sandbox-container
+cd sandbox-container
+docker pull omerio/graphviz-server&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Something noteworthy things of running the above are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;docker/pull&lt;/code&gt; does &lt;em&gt;NOT&lt;/em&gt; actually pull down any files or folders&lt;/li&gt;
+&lt;li&gt;Instead, running &lt;code class=&quot;language-text&quot;&gt;docker images&lt;/code&gt; lets us see what images are locally available:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;sh&quot;&gt;&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;➜  sandbox-container docker images
+REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
+omerio/graphviz-server   latest              d190726bbdb9        3 years ago         691MB&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then, running the container should be as simple as:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;zsh&quot;&gt;&lt;pre class=&quot;language-zsh&quot;&gt;&lt;code class=&quot;language-zsh&quot;&gt;docker run -d -p : omerio/graphviz-server&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;-d&lt;/code&gt; is &lt;code class=&quot;language-text&quot;&gt;--detach&lt;/code&gt; as in run the process in the background&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;-p&lt;/code&gt; is &lt;code class=&quot;language-text&quot;&gt;--publish list&lt;/code&gt; which means it&apos;ll publish the port we&apos;re operating on to console&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In theory, after I&apos;ve successfully started up a docker container, I should see the &lt;code class=&quot;language-text&quot;&gt;docker container ls&lt;/code&gt; command return something:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;zsh&quot;&gt;&lt;pre class=&quot;language-zsh&quot;&gt;&lt;code class=&quot;language-zsh&quot;&gt;➜  sandbox-container docker container ls
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Becomes:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;zsh&quot;&gt;&lt;pre class=&quot;language-zsh&quot;&gt;&lt;code class=&quot;language-zsh&quot;&gt;➜  teach-myself git:(master) ✗ docker container ls
+CONTAINER ID        IMAGE                    COMMAND                  CREATED             STATUS              PORTS                     NAMES
+387cfa3b5734        omerio/graphviz-server   &amp;quot;java -jar /opt/grap…&amp;quot;   9 seconds ago       Up 9 seconds        0.0.0.0:32768-&amp;gt;4333/tcp   pensive_ellis&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Then, using insomnia client, I am able to hit &lt;code class=&quot;language-text&quot;&gt;http://localhost:32768/svg&lt;/code&gt; with the &lt;code class=&quot;language-text&quot;&gt;digraph G { a -&amp;gt; b -&amp;gt; c; a-&amp;gt; c; b -&amp;gt; d; c-&amp;gt; d; }&lt;/code&gt; to generate the following digraph:&lt;/p&gt;
+&lt;p&gt;&lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/teach-myself/static/07cca673db12a791089b36fa2f82057f/46647/simple-digraph.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 275px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 138.54545454545456%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAYAAABh2p9gAAAACXBIWXMAAAsSAAALEgHS3X78AAACB0lEQVRIx5WVSa7CMBBEuTx3YMWGC4AESJyBJWwYxTzPIGbor2epLZOfOElLlp1gytWu6k5GIuL7/Zr5fD7LYDCQ4XBo5vF4LPf7/WePGxkf2O12M0Dv99u+u16v9l0YqBdwt9vJer0268lkYp6J6XQql8slPSAzbAB9Pp8m1dlsJvP5PF3Kwc3b7VYajYY0m03LmN91pGJIfD4fWSwW5v42m4195+7TtZehboKhArVaLaty8HBGIkDAVquVWefzealWq2b9eDz+gSYCROHX62WY9no9GY1G5i4R7HA4/IBGArqbMDN/RGFiuVwajxKA4oBEDDUtbAIgwiig+hBAN/VYwCAQoqhIlKKa3ZtyUGEVBBDSB/R4PJp79YrimhSfKYjWMGJgGT3Aa5swkwJaLpcNy3a7ba+A1F1zRxrbZYiKpJbL5SSbzUqn0zHvEYiWFlvL7inYA++hHiy63a4VBiGCdxcJSJxOJ9tN9vu9edZDEIJZ7zcRoDZVnlnzZ5qp9kM9TEG97ctt+4CSJqVGmoBjZk09rHWFMnRnmNGd1TrYBvskBgyzDnWqvqMhaA3HAoZZRz9ExWJR6vW6FAqFyCac6BOgm2u1mlQqFSmVSsbkUWCxnwAY9vt9257ceo5K2wsIGwZB6WnJ4cWoavECwgzLYBeqg4HZUTsVQxeU7oJ1dOBDX6X8AbnaiMTgo/iLAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;generated digraph&quot;
+        title=&quot;&quot;
+        src=&quot;/teach-myself/static/07cca673db12a791089b36fa2f82057f/46647/simple-digraph.png&quot;
+        srcset=&quot;/teach-myself/static/07cca673db12a791089b36fa2f82057f/0ae26/simple-digraph.png 168w,
+/teach-myself/static/07cca673db12a791089b36fa2f82057f/46647/simple-digraph.png 275w&quot;
+        sizes=&quot;(max-width: 275px) 100vw, 275px&quot;
+      /&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;things-for-next-time&quot;&gt;&lt;a href=&quot;#things-for-next-time&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Things for Next Time&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Figure out how to forward / configure ports&lt;/li&gt;
+&lt;li&gt;Figure out where &lt;code class=&quot;language-text&quot;&gt;Dockerfile&lt;/code&gt; comes in&lt;/li&gt;
+&lt;li&gt;Spin up and populate the &lt;code class=&quot;language-text&quot;&gt;sandbox-container&lt;/code&gt; project&lt;/li&gt;
+&lt;li&gt;Go through the getting started docs&lt;/li&gt;
+&lt;li&gt;Deploy services to AWS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&quot;appendix&quot;&gt;&lt;a href=&quot;#appendix&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Appendix&lt;/h1&gt;
+&lt;h2 id=&quot;a1---getting-started-guide-on-docker&quot;&gt;&lt;a href=&quot;#a1---getting-started-guide-on-docker&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;A1 - Getting Started Guide on Docker&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.docker.com/docker-hub/&quot;&gt;See here&lt;/a&gt;&lt;/p&gt;</content:encoded><author>foxnewsnetworkr@example.com</author></item><item><title><![CDATA[Investigation into Kubernetes]]></title><description><![CDATA[Introduction to Kubernetes In my previous post, I experimented with attempting to use zeit.co for lambdas in an attempt to render graphs…]]></description><link>https://foxnewsnetwork.github.io/teach-myself/investigation-into-kubernetes</link><guid isPermaLink="false">https://foxnewsnetwork.github.io/teach-myself/investigation-into-kubernetes</guid><category><![CDATA[kubenets]]></category><category><![CDATA[aws]]></category><category><![CDATA[devops]]></category><pubDate>Sat, 02 Mar 2019 00:00:00 GMT</pubDate><content:encoded>&lt;h1 id=&quot;introduction-to-kubernetes&quot;&gt;&lt;a href=&quot;#introduction-to-kubernetes&quot; aria-hidden class=&quot;anchor&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Introduction to Kubernetes&lt;/h1&gt;
 &lt;p&gt;In my previous post, I experimented with attempting to use zeit.co for lambdas in an attempt to render graphs, however, this did not work out because rendering typically required heavy machinery such as:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;dom&lt;/li&gt;
